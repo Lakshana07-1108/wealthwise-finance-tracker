@@ -1,0 +1,101 @@
+import type { Transaction, Category, CategoryInfo } from "./types";
+import {
+  Utensils,
+  Plane,
+  Receipt,
+  ShoppingBasket,
+  Heart,
+  Landmark,
+} from "lucide-react";
+
+export const transactions: Transaction[] = [
+  {
+    id: "txn1",
+    date: "2024-07-28",
+    name: "Salary",
+    amount: 5000,
+    category: "Income",
+    type: "income",
+  },
+  {
+    id: "txn2",
+    date: "2024-07-27",
+    name: "Grocery Shopping",
+    amount: 150.75,
+    category: "Food",
+    type: "expense",
+  },
+  {
+    id: "txn3",
+    date: "2024-07-26",
+    name: "Flight to Bali",
+    amount: 1200,
+    category: "Travel",
+    type: "expense",
+  },
+  {
+    id: "txn4",
+    date: "2024-07-25",
+    name: "Electricity Bill",
+    amount: 75.2,
+    category: "Bills",
+    type: "expense",
+  },
+  {
+    id: "txn5",
+    date: "2024-07-24",
+    name: "New Shoes",
+    amount: 250,
+    category: "Shopping",
+    type: "expense",
+  },
+  {
+    id: "txn6",
+    date: "2024-07-23",
+    name: "Doctor's Visit",
+    amount: 100,
+    category: "Health",
+    type: "expense",
+  },
+  {
+    id: "txn7",
+    date: "2024-07-22",
+    name: "Dinner with Friends",
+    amount: 85.5,
+    category: "Food",
+    type: "expense",
+  },
+  {
+    id: "txn8",
+    date: "2024-07-20",
+    name: "Internet Bill",
+    amount: 60,
+    category: "Bills",
+    type: "expense",
+  },
+  {
+    id: "txn9",
+    date: "2024-07-18",
+    name: "Freelance Project",
+    amount: 750,
+    category: "Income",
+    type: "income",
+  },
+  {
+    id: "txn10",
+    date: "2024-07-15",
+    name: "Pharmacy",
+    amount: 45.3,
+    category: "Health",
+    type: "expense",
+  },
+];
+
+export const categoryInfo: Record<Category, CategoryInfo> = {
+  Food: { icon: Utensils, color: "text-red-500" },
+  Travel: { icon: Plane, color: "text-blue-500" },
+  Bills: { icon: Receipt, color: "text-yellow-500" },
+  Shopping: { icon: ShoppingBasket, color: "text-purple-500" },
+  Health: { icon: Heart, color: "text-green-500" },
+  Income: { icon: Landmark, color: "text-emerald-500" },
+};
