@@ -45,3 +45,6 @@ State Management: React Hooks & Context API
 Charting: Recharts
 
 Form Handling & Validation: React Hook Form + Zod
+<img width="1024" height="1536" alt="523858864-b38c2b32-3a74-46a7-80f3-6cc5b7b88094" src="https://github.com/user-attachments/assets/f79f14af-0f68-4fa3-b753-087d4ad0bab9" />
+
+
